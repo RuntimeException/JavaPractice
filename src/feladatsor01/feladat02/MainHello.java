@@ -1,7 +1,7 @@
 package feladatsor01.feladat02;
 
-/** 2. Helyezd el a "Hello World" kiírását egy példánymetódusba. Ekkor a main metódusban meg kell példányosítani
-   az osztályodat és meghívni rajta a kiíró metódust. */
+/** 2. Helyezd el a "Hello World" kiÃ­rÃ¡sÃ¡t egy pÃ©ldÃ¡nymetÃ³dusba. Ekkor a main metÃ³dusban meg kell pÃ©ldÃ¡nyosÃ­tani
+   az osztÃ¡lyodat Ã©s meghÃ­vni rajta a kiÃ­rÃ³ metÃ³dust. */
 
 public class MainHello {
 
@@ -9,7 +9,6 @@ public class MainHello {
         Hello hello = new Hello();
         hello.sayHello();
     }
-
 }
 
 class Hello {

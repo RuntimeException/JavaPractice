@@ -1,6 +1,6 @@
 package feladatsor01.feladat01;
 
-/* 1. Készíts "Hello World" alkalmazást! (main metódusba kiírás) */
+/** 1. Készíts "Hello World" alkalmazást! (main metódusba kiírás) */
 
 public class Hello {
 
