@@ -1,9 +1,9 @@
 package feladatsor03.feladat01;
 
 /**
- * 1. Valósítsd meg a toString() metódust egy saját osztályon és "add össze"
- * (pl.: o=new Sajat(); String r=o+"abcd";) egy String-el! Írd ki az eredményt a
- * konzolra, pl.: System.out.println(r);
+ * 1. ValÃ³sÃ­tsd meg a toString() metÃ³dust egy sajÃ¡t osztÃ¡lyon Ã©s "add Ã¶ssze" 
+ *  (pl.: o=new Sajat(); String r=o+"abcd";) egy String-el! Ãrd ki az eredmÃ©nyt 
+ *  a konzolra, pl.: System.out.println(r);
  */
 
 public class Ork {
@@ -35,6 +35,6 @@ public class Ork {
 
     public static void main(String[] args) {
         Ork guldan = new Ork("Guldan", 2000, 10, 1000, "4d10 + 6");
-        System.out.println(guldan.toString());
+        System.out.println(guldan.toString() + "abcd");
     }
 }
