@@ -1,25 +1,25 @@
-1. Valósítsd meg a toString() metódust egy saját osztályon és "add össze" 
-    (pl.: o=new Sajat(); String r=o+"abcd";) egy String-el! Írd ki az eredményt 
+1. ValÃ³sÃ­tsd meg a toString() metÃ³dust egy sajÃ¡t osztÃ¡lyon Ã©s "add Ã¶ssze" 
+    (pl.: o=new Sajat(); String r=o+"abcd";) egy String-el! Ãrd ki az eredmÃ©nyt 
     a konzolra, pl.: System.out.println(r);
 
-2. Írj végtelen ciklust "while(true)"; Sorsolj véletlenszámokat a ciklus belsejében 
-    (a Random beépített osztálynak van egy nextInt() metódusa)! Tegyél erre az 
-    utasításra breakpointot! A debugger akkor álljon meg az adott soron, ha, a 
-    véletlenszám egy elõre meghatározott tartományban van, pl.: nagyobb, mint 
+2. Ãrj vÃ©gtelen ciklust "while(true)"; Sorsolj vÃ©letlenszÃ¡mokat a ciklus belsejÃ©ben 
+    (a Random beÃ©pÃ­tett osztÃ¡lynak van egy nextInt() metÃ³dusa)! TegyÃ©l erre az 
+    utasÃ­tÃ¡sra breakpointot! A debugger akkor Ã¡lljon meg az adott soron, ha, a 
+    vÃ©letlenszÃ¡m egy elÃµre meghatÃ¡rozott tartomÃ¡nyban van, pl.: nagyobb, mint 
     Integer.MAX_VALUE/5
 
-3. Add össze 100 000-szer az "abcd" String-et! Mit tapasztalsz? Próbáld meg a 
-    StringBuilder osztállyal!
+3. Add Ã¶ssze 100 000-szer az "abcd" String-et! Mit tapasztalsz? PrÃ³bÃ¡ld meg a 
+    StringBuilder osztÃ¡llyal!
 
-4. Készíts két szálat, az egyik páros, a másik páratlan számokat írjon ki fél 
-    másodpercenként! Oldd meg megbízhatóan, hogy egyszerre csak az egyik szál
-    futhasson! Készíts a programból jar-t az IDE szolgáltatásait igénybe véve!
-    Futtasd a programot a parancssorból!
+4. KÃ©szÃ­ts kÃ©t szÃ¡lat, az egyik pÃ¡ros, a mÃ¡sik pÃ¡ratlan szÃ¡mokat Ã­rjon ki fÃ©l 
+    mÃ¡sodpercenkÃ©nt! Oldd meg megbÃ­zhatÃ³an, hogy egyszerre csak az egyik szÃ¡l
+    futhasson! KÃ©szÃ­ts a programbÃ³l jar-t az IDE szolgÃ¡ltatÃ¡sait igÃ©nybe vÃ©ve!
+    Futtasd a programot a parancssorbÃ³l!
 
-5. Olvass be egy Properties fájlt és próbáld kiolvasni a Properties objektumból 
-    a felhasználó által a parancssoron megadott kulcshoz tartozó értéket! Ha nem
-    szerepel ilyen hozzárendelés a Properties objektumban, akkor dobj egy saját
-    kivételt (PropertyKeyNotFoundException)! Ha a fájl nem létezik, akkor IOException-t
-    kapunk, ezt csomaguljuk be egy másik saját kivétel típusba (PropertiesReadError),
-    figyelve arra, hogy az eredeti IOException, mint ok szerepeljen az új, saját
-    kivételben! A létrejött kivételt dobjuk tovább! Teszteljük a programunkat!
+5. Olvass be egy Properties fÃ¡jlt Ã©s prÃ³bÃ¡ld kiolvasni a Properties objektumbÃ³l 
+    a felhasznÃ¡lÃ³ Ã¡ltal a parancssoron megadott kulcshoz tartozÃ³ Ã©rtÃ©ket! Ha nem
+    szerepel ilyen hozzÃ¡rendelÃ©s a Properties objektumban, akkor dobj egy sajÃ¡t
+    kivÃ©telt (PropertyKeyNotFoundException)! Ha a fÃ¡jl nem lÃ©tezik, akkor IOException-t
+    kapunk, ezt csomaguljuk be egy mÃ¡sik sajÃ¡t kivÃ©tel tÃ­pusba (PropertiesReadError),
+    figyelve arra, hogy az eredeti IOException, mint ok szerepeljen az Ãºj, sajÃ¡t
+    kivÃ©telben! A lÃ©trejÃ¶tt kivÃ©telt dobjuk tovÃ¡bb! TeszteljÃ¼k a programunkat!
