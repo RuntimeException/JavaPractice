@@ -3,11 +3,10 @@ package feladatsor01.feladat07;
 import java.math.BigDecimal;
 
 /**
- * 7. 1.0 float értékbõl 0.1-es lépésekkel menjünk 0.0-ig, minden iterációban
- * kiírva az eredményt. Az eredmények nem pontosan azok, amiket vártunk. Keress
- * megoldást a problémára (google: java exact arithmetics)! A megoldásként
- * elõálló osztály javadoc dokumentációját felkeresve, az ott leírtak szerint
- * elvégezve a kezdeti értékbõl a kivonásokat ismételjük meg a fenti kísérletet!
+ * 7. 1.0 float Ã©rtÃ©kbÅ‘l 0.1-es lÃ©pÃ©sekkel menjÃ¼nk 0.0-ig, minden iterÃ¡ciÃ³ban kiÃ­rva az eredmÃ©nyt. Az eredmÃ©nyek
+ * nem pontosan azok, amiket vÃ¡rtunk. Keress megoldÃ¡st a problÃ©mÃ¡ra (google: java exact arithmetics)! A megoldÃ¡skÃ©nt
+ * elÅ‘Ã¡llÃ³ osztÃ¡ly javadoc dokumentÃ¡ciÃ³jÃ¡t felkeresve, az ott leÃ­rtak szerint elvÃ©gezve a kezdeti Ã©rtÃ©kbÅ‘l a
+ * kivonÃ¡sokat ismÃ©teljÃ¼k meg a fenti kÃ­sÃ©rletet!
  */
 
 public class Arithmetics {

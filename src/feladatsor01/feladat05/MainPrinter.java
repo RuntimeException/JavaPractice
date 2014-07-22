@@ -1,6 +1,7 @@
 package feladatsor01.feladat05;
 
-/** Készítsünk interfészt, ami a kiíró metódust deklarálja és a kiíró osztályoknál valósítsuk meg ezt az interfészt!*/
+/** 5. A kÃ©t kiÃ­rÃ³ osztÃ¡lyt pÃ©ldÃ¡nyosÃ­tsuk meg egy harmadik osztÃ¡ly main matÃ³dusÃ¡ban, majd hÃ­vjuk meg a kiÃ­rÃ³
+   metÃ³dusukat ugyanazzal a paramÃ©terrel!*/
 
 public class MainPrinter {
 
