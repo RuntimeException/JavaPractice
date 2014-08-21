@@ -1,0 +1,54 @@
+0. Töltsük le az eclipse Web Tools Platform környezetét!
+	- vagy a http://www.eclipse.org/downloads/ oldalról az eclipse IDE for java EE 
+		developers opció
+
+	- vagy a help -> install new software pontban add
+		kepler: http://download.eclipse.org/releases/kepler/
+		indigo: http://download.eclipse.org/webtools/repository/indigo
+
+		Installáljuk a Web Tools Platform legújabb verzióját!
+
+	- töltsük le a http://tomcat.apache.org/download-70.cgi oldalról a Core pontban
+		a zip fájlt, majd tömörítsük ki egy mappába!
+
+	- inicializáljuk a tomcat-et!
+		- Java EE perspektíva megnyitása
+		- lent Servers fül megkeresése, ha nincs, akkor Window, Show View, Other..., 
+			Server, Servers
+
+		- lent a Servers fülön jobb gomb, New, Server
+			- Apache, Tomcat 7
+			- Server runtime environment, add
+				- Browse-al kiválasztani a tomcat könyvtárát, Finish
+			- Finish
+
+1. Készíts Hello World servletet!
+
+2. Adj hozzá egy welcome page-et valamilyen tartalommal!
+
+3. Készíts egy servletet, amely a default szerepét fogja ellátni, azaz 
+	illeszkedik minden url-re!
+
+4. Inicializáld az egyes servleteket egy-egy string-el, amit minden válaszba 
+	beágyaznak!
+
+5. Készíts egy book/list elérési útra illeszkedő servletet, amely egy Book 
+	osztály elemeit tartalmazó listából készíti el a válaszát! Egyelőre a
+	lista legyen a servlet által létrehozott.
+
+6. Most a könyvek listáját szolgáltassa egy másik osztály, mondjuk egy BookManager!
+	Legyen ő egy singleton (enum), aki egy fájlból olvassa be a könyveket első
+	lekéréskor. A fájl formátuma tetszőleges.
+		- minden további lekérésnél ugyanazt a listát adja vissza (cache)
+		- a könyveket egy Book osztály reprezentálja (azonosító, cím, író)
+
+7. Lehessen hozzáadni könyveket, azaz a BookManager-nek legyen add metódusa, amit
+	GET paramétererekből nyert lekérési paraméterekkel tudunk meghívni!
+
+8. Oldjuk meg, hogy az írások során ne legyen probléma a többszálúságból és ne
+	befolyásolja webalkalmazásunkat a fájlírás lassúsága! Ehhez a BookManager-ben
+	készítsünk egy buffert, amely az elvégzendő műveleteket tartalmazza.
+		- a servlet meghívja az add metódust a BookManager-en, ő elhelyez egy új
+			Book példányt a bufferben, majd visszatér. Egy másik, háttérben futó
+			szál várakozik, amíg a bufferben megjelenik egy elem, majd kiírja
+			azt a fájlrendszeren elhelyezett fájlunkba.

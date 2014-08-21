@@ -1,0 +1,13 @@
+1. Az előző órán használt próba xml-t értelmezzük a DOM parserrel!
+	- készítsünk DocumentBuilderFactory-t, majd ebből DocumentBuilder-t
+	- írjuk ki az összes író nevét!
+
+2. Egészítsük ki a könyveket tartalmazó xml-t bruttó ár tag-ekkel!
+	- minden könyvhöz adjunk hozzá egy gross_price nevű tag-et, amelynek tartalma
+		a könyv ára * 1,05
+
+3. Írjuk ki a memóriában levő DOM struktúrát egy fájlba!
+	- készítsünk TransformerFactory-t, majd ebből Transformer-t!
+	- a dokumentumot csomagoljuk DOMSource-ba
+	- a fájlt csomagoljuk StreamResult-ba
+	- hívjuk meg a Transformer transform metódusát!

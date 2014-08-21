@@ -1,0 +1,34 @@
+0. Telepítsük a Google Web Toolkit-et az eclipse-be: http://www.gwtproject.org/usingeclipse.html
+
+1. Készítsünk a hello world alkalmazásból chat-et!
+	- definiáljunk egy saját Service-t, a ServiceAsync párjával együtt (client package)
+	- készítsünk implementációt a service-hez (server package):
+		- tároljuk a teljes chat szöveget egy StringBuffer-ben a service
+			implementációban
+		- legyen egy metódus, amivel lehet küldeni üzenetet (sendMessage)
+			- ez a metódus hozzáadja a küldött String-et a StringBuffer-hez
+			- visszaadja a StringBuffer tartalmát
+
+	- Az EntryPoint-ban (client package):
+		- helyezzünk el egy TextArea-t, amibe majd a chat tartalma megy
+		- A név mezőt használjuk chat üzenetként
+		- a küldés gomb hatására hívjuk meg a saját Service sendMessage metódusát
+
+	- A web.xml-ben definiáljuk a saját servletünket:
+		- neve tetszőleges
+		- osztálya az implementációs osztály (server package)
+		- url-pattern: /<module xml rename-to értéke>/<RemoteServieRelativePath annotáció értéke>
+
+2. Próbáljuk ki a chat alkalmazást két tab-ban futtatva párhuzamosan!
+
+3. Tegyük lehetővé, hogy a felhasználók lássák a másik által beírt üzeneteket
+	anélkül, hogy nekik küldeni kellene egy újat! Ehhez:
+		- definiáljunk új metódust a Service-en: getChatContent
+		- használjuk a beépített Timer-t (példa a diasor 29. dia)
+		- amíg az üzenet küldésének eredményére várunk, tiltsuk le a küldés gombot
+
+4. Oldjuk meg, hogy a különböző servlet példányokhoz érkező chat üzenetek is egy közös
+	helyre menjenek:
+		- csináljunk egy ChatManager osztályt, amely legyen singleton (enum) és tárolja
+			a StringBuffer-t, amiben a teljes chat üzenetfolyam van
+		- a Service ezt a ChatManager singleton-t használja az üzenetfolyam kezeléséhez

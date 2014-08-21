@@ -1,0 +1,73 @@
+1. Hozz létre egy int tömböt elõször inicializáló listával pl. "{1,2,3}"!
+
+2. Hozz létre egy 10 elemû tömböt és töltsd fel az elsõ 10 Fibonacci számmal! 
+	Az elsõ két szám 1, 1. A következõ Fibonacci szám mindig az elõzõ kettõnek 
+	az összege.
+
+3. Iterálj végig a feltöltött tömbön a két tanult módon és írd ki a tömb 
+	elemeinek értékét!
+
+4. Készíts saját osztályt, amely rendelkezik valamilyen belsõ állapottal. 
+	Hozz létre tömböt, amely ezen osztály példányaiból tartalmaz néhányat. 
+	Az Arrays.sort segítségével rendezd meg a tömböt, majd írd ki az eredményt 
+	a konzolra (toString felüldefiniálás)! Az osztályon ne felejtsd el 
+	megvalósítani a Comparable<Osztálynév> interfészt! A Comparable megvalósításakor
+	vedd figyelembe a belsõ állapotot, az befolyásolja a sorrendet!
+
+5. Készíts tetszõleges enumot legalább 4 értékkel!
+
+6. Definiálj egy egész értékû mezõt az enumba és minden példánynál töltsd 
+	fel valamilyen értékkel!
+
+7. Definiálj egy metódust, amely kiírja az enum konstanshoz tartozó 6. 
+	feladatban megadott értéket!
+
+8. Készíts olyan enumot, amely tartalmaz abstract metódust! A metódusnak minden
+	enum elem esetén más a megvalósítása
+
+8. Készíts tömböt, amely tartalmaz néhányat a definiált enum konstansok közül!
+
+9. Rendezd a tömböt (Arrays.sort) és írd ki a konzolra az eredményt (minden 
+	konstans kiírásakor a rajtuk definiált metódust is hívd meg)!
+
+10. Készíts annotációt két paraméterrel, helyezd el egy osztály különbözõ elemein:
+	- az osztályon
+	- metódusokon
+	- metódusok paraméterein
+	- mezõkön
+
+	Írd ki a konzolra típus szerint csoportosítva azokat az elemeket (metódusok
+		egyben, mezõk egyben), amelyeken megtalálható az annotáció! Írd ki az
+		annotációban tárolt paraméterek értékeit is!
+
+11. Készítsünk dinamikus statisztikákat elõállító programot! Elsõ lépésként
+	definiáljunk egy interfészt (Statistic), amelyet az összes statisztika megvalósít majd!
+	Az interfész metódusai legyenek esemény callback-ek, az események pedig egy osztály
+	bejárásakor keletkeznek:
+		- onMethod(Method m)
+		- onField(Field f)
+
+	A különbözõ statisztikák célja lehet pl. a private, protected, package private,
+	public metódusok megszámlálása vagy az osztálymetódus-példánymetódus arány 
+	meghatározása.
+
+	A program indításakor két parancssori argumentumot vár: az osztály nevét, amelyiken
+	a statisztikákat(target) lefuttatjuk, illetve a statisztikák osztályneveit(stats).
+	Mindkettõ String, a stats String osztályneveket tartalmaz vesszõvel elválasztva.
+	Ezután:
+		- be kell tölteni a target osztályt
+
+		- mindegyik statisztika osztályt be kell tölteni, példányosítani
+			(Class objektumon newInstance())
+
+		- végigmenni a target osztály elemein (mezõk, metódusok, ...)
+		egészen az Object õsig és a statisztika objektumok megfelelõ metódusait
+		meghívni a megfelelõ elemekre (metódusok esetén onMethod, ...).
+
+	Végül definiáljuk felül a statisztika osztályok toString metódusát és adjunk
+	kulturált String reprezentációt mindegyikrõl, pl.:
+
+		private: 5
+		protected: 0
+		package private: 2
+		public: 2

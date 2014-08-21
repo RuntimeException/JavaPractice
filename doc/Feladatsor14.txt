@@ -1,0 +1,25 @@
+1. Mentsd le az xml fájlt a http://msdn.microsoft.com/en-us/library/ms762271(v=vs.85).aspx
+	címről!
+
+2. Csinálj egy SAXParser-t a SAXParserFactory-n keresztül!
+
+3. Készíts egy Book osztályt, amely az xml-ben található könyveket fogja
+	reprezentálni!
+
+4. A példa xml-t szűrd meg úgy, hogy csak a "Fantasy" műfajba tartozó könyvek
+	maradjanak meg. Ezekből készíts Book objektumokat, amelyeket rendezz
+	meg a szerző neve szerint csökkenő sorrendben! Írd ki az eredményt egy
+	a felhasználó által parancssori argumentumként megadott elérési úton taláható
+	csv fájlba! Használd a String.format metódust a megfelelő formátum létrehozásához!
+
+5. Készíts loggert, amely az előző programod futása során logging üzeneteket készít!
+	Különböző események különböző szinteken generáljanak log bejegyzéseket! A log-ot
+	egy xml fájlba mentsük!
+
+6. Készíts statisztikát a log xml kimenetéből! Dolgozd fel az állományt SAX parserrel
+	és gyűjtsd ki az egyes szintekhez tartozó bejegyzéseket! A bejegyzéseket
+	reprezentáló LogEntry osztályt készítsd el és töltsd fel a parsing során talált
+	adatokkal! Az egyes LogEntry objektumokat gyűjtsd egy map-ben loglevel szerint
+	rendszerezve!
+
+7. Írd ki a konzolra a statiksztika eredményét: log level neve, bejegyzések száma, tartalma.

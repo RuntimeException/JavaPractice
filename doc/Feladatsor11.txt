@@ -1,0 +1,25 @@
+1. Készítsen burkolót az általános Set-hez úgy, hogy az minden hívást logol:
+	- a set tartalmát megváltoztató hívásokat "warn"
+	- a többit "info" szinten
+	- az egyes metódusok hatásáról a megfelelő javadoc-ban kap információt (google: java Set interface)
+
+2. Készítsen példaprogramot, amely használja az ön által készített Set burkolót!
+	- készítsen mondjuk egy HashSet példányt
+	- burkolja be az előbb elkészített burkolóba
+	- hívjon Set műveleteket rajta a burkoló objektum referencián keresztül
+
+3. A 7-es feladatban készített logger példány mentse a kimenetét egy fájlba (az aktuális working directory-ban egy log.log tökéletes)!
+
+4. Készítsen programot, amely beolvassa a generált log fájlt és statisztikát készít az egyes log szintekhez tartozó üzenetekről:
+	- a statisztikát tárolja egy Map-ben, a kulcsok a szintek (info, warn, err, debug, stb.)
+	- csak azok a kulcsok szerepeljenek a statisztikában, amelyek előfordulnak a log fájlban
+	- csak létező szinteket fogadjon el: tárolja egy Set-ben a lehetséges szinteket
+	- nem létező szintre dobjon a program kivételt: UnknownLogLevel (ezt le kell származtatni az Exception-ből, ne felejtsen el megfelelő konstruktorokat létrehozni... ehhez van IDE támogatás)
+
+5.	A szintek beégetése a kódba nem szerencsés, ezért:
+		- tárolja azokat egy property fájlban vesszővel elválasztva
+		- String.split-el tudja kiválasztani beolvasás után
+		- parancssori argumentumként vegye át a log fájl elérési útját:
+			- mielőtt olvasni kezdené figyeljen arra, hogy a fájl létezik-e
+
+6. Csomagolja a teljes elkészült alkalmazást jar-ba, és futtassa a parancssorból (Eclipse-ben a file->export funkciót segítségével készíthet jar-t)

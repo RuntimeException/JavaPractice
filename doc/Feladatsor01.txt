@@ -1,0 +1,13 @@
+1. Készíts "Hello World" alkalmazást! (main metódusba kiírás)
+
+2. Helyezd el a "Hello World" kiírását egy példánymetódusba. Ekkor a main metódusban meg kell példányosítani az osztályodat és meghívni rajta a kiíró metódust.
+
+3. Tegyük paraméterezhetővé a szöveget, a kiíró metódus fogadjon egy string paramétert!
+
+4. Készítsünk különféle kiíró osztályokat, az egyik a paraméterül kapott szöveget csupa kisbetűvel (String.toLowerCase()), a másik csupa nagybetűvel (String.toUpperCase()) írja ki!
+
+5. A két kiíró osztályt példányosítsuk meg egy harmadik osztály main matódusában, majd hívjuk meg a kiíró metódusukat ugyanazzal a paraméterrel!
+
+6. Készítsünk interfészt, ami a kiíró metódust deklarálja és a kiíró osztályoknál valósítsuk meg ezt az interfészt!
+
+7. 1.0 float értékből 0.1-es lépésekkel menjünk 0.0-ig, minden iterációban kiírva az eredményt. Az eredmények nem pontosan azok, amiket vártunk. Keress megoldást a problémára (google: java exact arithmetics)! A megoldásként előálló osztály javadoc dokumentációját felkeresve, az ott leírtak szerint elvégezve a kezdeti értékből a kivonásokat ismételjük meg a fenti kísérletet!

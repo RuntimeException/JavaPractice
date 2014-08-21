@@ -1,0 +1,28 @@
+1. Készítsen hello world alkalmazást, default package-be, IDE nélkül! Fordítsa 
+	le a programot parancssorból (javac parancs segítségével)! Windows 
+	környezetben a jdk bin könyvtára nincs benne a PATH-ban (terminálban úgy, 
+	hogy "javac" nem fog működni), ezért abszolút útvonal megadása szükséges: 
+	"C:\Program Files\...\bin\javac". Futtatáskor figyeljen a classpath 
+	(-cp kapcsoló) megfelelő beállítására!
+
+2. Fordítson két osztályt, az egyik a belépési pontot tartalmazza (main metódus), 
+	a másik a kiírás logikáját egy statikus metódusban!
+
+3. Készítsen egy új hello world alkalmazása, de ezúttal helyezze az osztályokat 
+	egy package-be! Fordítsa és futtassa a programot!
+
+4. Hozzon létre egy jar állományt az elkészült programból 
+	(jar -cvz <jar_file_neve> forrásfile1, forrásfile2, ...), majd futtassa a 
+	classpath (java -cp) kapcsolót használva!
+
+5. Állítsa be a Main-Class értéket a manifest fájlban, majd hozzon létre egy új 
+	jar állományt. Futtassa a "-jar" kapcsolóval! 
+	(Itt nem kell majd classpath-ot megadni)
+
+6. Hozzon létre jar állományt a használt IDE-ből (eclipse esetében: projekten 
+	jobb gomb, export), állítsa be a main class-t, majd futtassa a parancssorból!
+
+7. Reprodukálja a programstorage diasor 12. diáján látottakat!
+
+8. Állítsa a megfelelő osztályt sealed-re a manifest fájlban, készítsen új jar 
+	állományt és futtassa újra a programot mindkét módon!

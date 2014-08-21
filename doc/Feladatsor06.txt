@@ -1,0 +1,41 @@
+1. Hozz létre egy osztály egy statikus metódussal. Szerezz referenciát 
+	a Class objektumra, amely ezt az osztályt reprezentálja! Reflection 
+	segítségével hívd meg a statikus metódust!
+
+2. Adj arumentumokat a metódushoz, a törzsében írd ki azok értékeit! 
+	A metódushíváskor most adj át az argumentumok típusainak megfelelő 
+	objektumokat (a primitív típusokat be kell csomagolni)!
+
+3. 1. és 2. feladat példánymetódussal.
+
+4. Készíts metódust, amely kiindul egy osztályból (paraméter Class<?> 
+	típusú), végigmegy az ősökön keresztül az Object-ig és minden lépésben 
+	kiírja az osztály nevét:
+		- addig haladjon az osztálytól az ősökön keresztül, amíg már nincs 
+			több ős (getSuperclass() null-al tér vissza)
+		
+		- írja ki az osztály nevét (getName())
+
+		- tesztelje az elkészített metódust egy legalább 3 őssel rendelkező 
+			osztállyal!
+
+5. A 4. feladat minimális módosítása: írd ki az osztályok nevét fordítva, 
+	Object-től a paraméterül adott osztályig!
+
+6. Készíts egy annotációt, amely egy String-et képes tárolni! Helyezd el 
+	egy osztály metódusain (legalább kettőn), és tegyél még mellé olyan 
+	metódusokat is, amelyek nincsenek ellátva annotációval (void visszatérési 
+	érték, üres törzs). Szűrd ki az osztály azon metódusait, amelyeken van 
+	annotáció, majd írja ki az annotációkban tárolt értékeket!
+
+	Annotációk készítése: 
+		- a fájlnév megegyezik az annotáció nevével
+		- public @interface <annotáció_neve> {}
+		- az annotációra el kell helyezni egy másik annotációt :), ez azt jelöli, 
+			hogy futásidőben is szeretnénk elérni a benne tárolt információt:
+			@Retention(RetentionPolicy.RUNTIME)
+
+7. Egy beépített osztályról készíts statisztikát!
+	- Sorold fel az osztályon elérhető public, protected és private láthatóságú 
+		metódusokat!
+	- Számold össze az osztályban deklarált statikus és példánymetódusokat!

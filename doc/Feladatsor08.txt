@@ -1,0 +1,47 @@
+1. Készíts listát, amely String-eket tárol! Helyezz el benne néhány elemet, 
+	majd írd ki õket a konzolra!
+
+2. Menj végig a listában kettõt elõre, egyet vissza mintában és írd ki az
+	elemeit!
+
+3. Menj végig a listán és sorsolj véletlenszámot minden elemre. Ha a sorsolt
+	szám a felhasználó által parancssori argumentumként számnál kisebb, akkor
+	töröld az elemet!
+
+4. Szüntesd meg a duplikátumokat a lisában (használj Set-et)!
+
+5. Vedd ki a listából azokat az elemeket, amelyekbõl több példányban vannak
+	jelen!
+
+6. Készíts két halmazt egész számokból némi átfedéssel! Végezd el az unió,
+	metszet, szimmetrikus differencia mûveleteket!
+
+7. Készíts Map-et, töltsd fel kulcs-értékek párokkal (az értékek között)
+	legyenek ismétlõdések! Töröld az többször elõforduló értékekhez tartozó
+	hozzárendeléseket a Map-bõl!
+
+8. Csináljunk egyszerû szerializációt! A cél egy egyszerû osztály példányainak
+	kiírása egy szöveges fájlba, majd onnan visszaolvasva egy ekvivalens példány
+	elõállítása. Az egyszerû osztály azt jelenti, hogy csak primitív vagy String
+	típusú mezõi vannak.
+
+		- Írjuk ki az osztály nevét, hogy a visszaolvasáskor tudjuk mit kell
+			példányosítani!
+
+		- Reflection segítségével menjünk végig az adattagokon, írjuk ki mindegyiket
+			név, érték formában!
+
+		- Lezárásként tegyünk egy üres sort vagy valamilyen speciális szimbólumot!
+
+		- Lehessen ugyanabba a fájlba több objektumot is kimenteni!
+		
+		- A program figyelmeztessen, ha nincs alapértelmezett konstruktor az osztályon, 
+			mert ilyenkor visszaolvasásnál nem tudjuk megpéldányosítani
+
+		- Annotációkkal kontrollálható legyen mely mezõket írjuk ki (pl. egy cache-ként
+			használt mezõt felesleges)
+
+9. Hogyan generáljunk véletlen számokat felsõ korláttal? Természetesen a java.util.Random
+	osztállyal... Rossz berögzõdés lehet, hogy nextInt() % felso_korlat algoritmust 
+	használunk. Vizsgáljuk meg miben különbözik a nextInt(felsokorlat) és az elõbb leírt 
+	algoritmus által visszaadott véletlenszámok eloszlása!

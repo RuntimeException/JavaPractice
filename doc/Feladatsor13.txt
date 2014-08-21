@@ -1,0 +1,32 @@
+1. Mutassuk meg a CopyOnWriteArrayList iterálási tulajdonságát miszerint egy 
+	iterátor garantáltan nem látja a létrehozása után a kollekcióba tett elemeket!
+		- megvalósíthatjuk úgy, hogy két szál közül az egyik folyamatosan végigiterál és
+			kiírja a kollekció elemeit, amíg a másik folyamatosan tölti a kollekciót.
+
+		- a másik lehetőség, hogy egy szálon létrehozzuk a kollekciót, feltöltjük néhány
+			elemmel, majd készítünk egy iterátort rá. Ezután betöltünk még néhány elemet,
+			majd a korábban elkészített iterátorral végigmegyünk a kollekción és kiírjuk
+			az emeleit.
+
+2. Demonstráljuk a BlockingQueue szálszinkronizációs szerepét is! Készítsünk két halmaznyi
+	szálat, amelyek közül az egyik halmaz várakozik elemekre, a másik pedig termeli azokat.
+	Amint megváltozik egy szál állapota, írjuk ki konzolra:
+		- x. szál kivett egy elemet
+		- x. szál betett egy elemet
+
+3 Készíts egy Runnable-t megvalósító osztályt, amelyben a run metódus véletlen ideig fut.
+
+4. Csináljunk egy Exceutor-t, amely segítségével végrehajtjuk a Runnable példányunkat:
+	- Executor készítése: Executors.newSingleThreadExecutor();
+	- task végrehajtáse: Executor.execute(Runnable r);
+
+5. Executor helyett ExecutorService legyen a fordításidejű típusa az Executorunknak! Ekkor
+	kapunk sok-sok új metódust, pl. megoldhatjuk kulturáltan az ExecutorService leállítását.
+
+6. Próbáljuk ki az invokeAll és invokeAny közötti különbséget a véletlen ideig tartó
+	Runnable segítségével!
+
+7. Készítsünk ScheduledExecutorService-t az Executors utility osztály segítégével!
+	- A véletlen ideig tartó task segítségével demonstráljuk a különbséget a
+		scheduleAtFixedRate és a scheduleWithFixedDelay hívások között!
+

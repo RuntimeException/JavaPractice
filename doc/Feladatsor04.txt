@@ -1,0 +1,35 @@
+0. Figyelje meg a Math.abs() metódus által visszaadott értéket a legkisebb létező 
+	int értékre (használja az Integer burkoló mezőit)!
+
+1. Készítsen egy osztályt, amelyet fa struktúrába lehet rendezni (konstruktorban 
+	az ősét meg lehet adni)! Az osztály definiáljon egy metódust (doDelegate()), 
+	amely kiír valamit a konzolra!
+
+2. Példányosítson néhányat az osztályból úgy, hogy az objektumok fa struktúrába 
+	rendeződjenek! A gyökér őse a struktúrában a null referencia.
+
+3. A doDelegate metódus valósítsa meg az osztálybetöltéskor ismertetett delegáció 
+	elvet, azaz mielőtt a "feldolgozást" (jelen esetben konzolra írás) elvégezné, 
+	hívja meg az ősének doDelegate metódusát!
+
+4. Készítsen interfészt, amely tartalmazza a doDelegate metódus deklarációját! 
+	Az osztály valósítsa meg ezt az intefészt!
+
+5. Hozzon létre további legalább két osztályt, amelyek ugyanúgy megvalósítják az 
+	interfészt és a metódus hívásakor a delegációt, de mást írnak ki a konzolra!
+
+6. A már létező fa struktúrát egészítse ki az újonnan létrehozott osztályok példányaival 
+	és indítson doDelegate hívásokat a struktúra különböző pontjaiból!
+
+7. Készíts két szálat, az egyik páros, a másik páratlan számokat írjon ki fél 
+	másodpercenként! Oldd meg megbízhatóan, hogy egyszerre csak az egyik szál
+	futhasson! Készíts a programból jar-t az IDE szolgáltatásait igénybe véve!
+	Futtasd a programot a parancssorból!
+
+8. Olvass be egy Properties fájlt és próbáld kiolvasni a Properties objektumból 
+	a felhasználó által a parancssoron megadott kulcshoz tartozó értéket! Ha nem
+	szerepel ilyen hozzárendelés a Properties objektumban, akkor dobj egy saját
+	kivételt (PropertyKeyNotFoundException)! Ha a fájl nem létezik, akkor IOException-t
+	kapunk, ezt csomaguljuk be egy másik saját kivétel típusba (PropertiesReadError),
+	figyelve arra, hogy az eredeti IOException, mint ok szerepeljen az új, saját
+	kivételben! A létrejött kivételt dobjuk tovább! Teszteljük a programunkat!

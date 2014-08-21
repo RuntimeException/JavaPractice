@@ -1,0 +1,10 @@
+1. Készíts programot, amivel szemléltetni lehet a garbage collector működését!
+	A program foglaljon le nagyobb méretű objektumokból sokat és mindegyikre
+	tartson fent erős referenciát! Mit tapasztalunk?
+
+2. Módosítsuk a fenti programot úgy, hogy nem tartunk referenciát a lefoglalt
+	objektumokra! Mit tapasztalunk?
+
+3. Készítsünk WeakHashMap-et, amely <SajatObjektum, Integer> formában minden
+	nagyméretű SajatObjektum példányhoz eltárol egy egész számot! Írjuk ki
+	minden új objektum foglalásakor a WeakHashMap aktuális méretét!

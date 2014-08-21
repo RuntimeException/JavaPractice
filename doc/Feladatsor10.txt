@@ -1,0 +1,13 @@
+1. A könyvek hozzáadásához készítsünk formot! Helyezzük el egy statikus html
+	fájlban, és a servletben kezeljük le a post kérést!
+
+2. Tegyük lehetővé, hogy minden felhasználó nyilvántarthassa a saját könyvét,
+	ehhez legyen egy beégetett felhasználó-jelszó lista, amelyek egyikével
+	azonosíthatja magát a felhasználó!
+		- amíg nem lépett be, ne lássa a könyvek listáját
+
+		- mindenkinek külön könyvlistája legyen, azokhoz tudjon hozzáadni
+			új könyveket
+
+3. Készítsünk remove linkeket, amelyekre kattintva a felhasználó könyvlistájából
+	eltűnik a megfelelő könyv!
