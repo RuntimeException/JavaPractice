@@ -1,4 +1,4 @@
-package feladatsor06.feladat03_to_04;
+package feladatsor06.feladat04_to_05;
 
 import java.util.ArrayList;
 

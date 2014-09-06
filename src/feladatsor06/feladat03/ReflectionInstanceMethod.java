@@ -1,4 +1,4 @@
-package feladatsor06.feladat02;
+package feladatsor06.feladat03;
 
 import java.lang.reflect.InvocationTargetException;
 
