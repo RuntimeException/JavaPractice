@@ -1,5 +1,16 @@
 package feladatsor07.feladat01_to_03;
 
+/**
+ * 1. Hozz létre egy int tömböt először inicializáló listával pl. "{1,2,3}"!
+ * 
+ * 2. Hozz létre egy 10 elemű tömböt és töltsd fel az első 10 Fibonacci számmal!
+ * Az első két szám 1, 1. A következő Fibonacci szám mindig az előző kettőnek az
+ * összege.
+ * 
+ * 3. Iterálj végig a feltöltött tömbön a két tanult módon és írd ki a tömb
+ * elemeinek értékét!
+ */
+
 public class ArrayTest {
 
     public static void main(String[] args) {
